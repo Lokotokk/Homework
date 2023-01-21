@@ -4,6 +4,11 @@
 
 [345, 897, 568, 234] -> 2*/
 
+/*По задаче 34 решение рабочее. 
+Неправильно задан диапазон для массива, попадают двузначные и однозначные числа. 
+Не используются параметры для max и min. ???
+По задачам 36 и 38 всё верно!*/
+
 int[] array = CreateArrayRndInt(4, 100, 999);
 PrintArray(array);
 int countPositiveNum=CountPositiveNum(array);
@@ -16,7 +21,7 @@ int[] CreateArrayRndInt(int size, int min, int max)
     Random rnd = new Random(); // явная типизация
     for (int i = 0; i < arr.Length; i++)
     {
-        arr[i] = rnd.Next(0, 1000);
+        arr[i] = rnd.Next(100, 1000);
     }
     return arr;
 }

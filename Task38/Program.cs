@@ -8,9 +8,9 @@
 double[] array = CreateArrayRndDouble(10, 1, 10);
 PrintArrayDouble(array);
 double maxNum = Max(array);
-Console.WriteLine($"max = {maxNum}");
+Console.WriteLine($"max = {maxNum}"); 
 double minNum = Min(array);
-Console.WriteLine($"min = {minNum}");
+Console.WriteLine($"min = {minNum}"); 
 double difference = Math.Round((maxNum - minNum), 1);
 Console.WriteLine($"max - min = {difference}");
 
@@ -58,3 +58,8 @@ double Min(double[] num1)
     return min;
 }
 
+/*double Difference();
+{
+    double dif = double Max() - double Min(double[] num1);
+    return dif;
+}*/
